@@ -13,7 +13,6 @@ RUN ln -s /opt/yarn/bin/yarn /usr/local/bin/yarn \
   && ln -s /usr/local/bin/nodejs /usr/local/bin/node
 
 COPY package.json /app/
-COPY yarn.lock /app/
 RUN yarn install
 
 # rails
@@ -24,7 +23,6 @@ RUN apt-get update \
 ENV LANG en_US.utf8
 
 COPY Gemfile* /app/
-COPY Procfile.dev /app/
 
 ENTRYPOINT ["./bin/start_server"]
 CMD ["bundle", "exec", "rails", "s", "-b", "0.0.0.0"]
