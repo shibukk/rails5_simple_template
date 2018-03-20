@@ -17,14 +17,9 @@ Bundler.with_clean_env do
   run 'bundle binstubs bundler --force'
 end
 
-# Replace database setting
-run 'rm -rf config/database.yml'
-get 'https://raw.github.com/shibukk/rails5_simple_template/master/config/database.yml', 'config/database.yml'
-
 # Add docker files
 get 'https://raw.github.com/shibukk/rails5_simple_template/master/bin/start_server', 'bin/start_server'
 get 'https://raw.github.com/shibukk/rails5_simple_template/master/root/docker-compose.yml', 'docker-compose.yml'
 get 'https://raw.github.com/shibukk/rails5_simple_template/master/docker/.env', 'docker/.env'
-get 'https://raw.github.com/shibukk/rails5_simple_template/master/docker/mysql/Dockerfile', 'docker/mysql/Dockerfile'
 get 'https://raw.github.com/shibukk/rails5_simple_template/master/docker/web/Dockerfile', 'docker/web/Dockerfile'
 run 'chmod 0755 bin/start_server'

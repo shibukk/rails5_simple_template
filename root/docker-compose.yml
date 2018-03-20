@@ -1,15 +1,6 @@
 version: '3'
 
 services:
-  db:
-    build:
-      context: .
-      dockerfile: ./docker/mysql/Dockerfile
-    volumes:
-      - binlog:/var/lib/mysql
-    env_file: ./docker/.env
-    ports:
-      - "13306:3306"
   web:
     build:
       context: .
@@ -22,13 +13,9 @@ services:
     ports:
       - "80:3001"
       - "3035:3035"
-    links:
-      - db
 
 volumes:
   node_modules:
     driver: local
   bundle:
-    driver: local
-  binlog:
     driver: local
