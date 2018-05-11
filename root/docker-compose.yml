@@ -11,8 +11,7 @@ services:
       - .:/app
     env_file: ./docker/.env
     ports:
-      - "80:3001"
-      - "3035:3035"
+      - "3000:3000"
 
 volumes:
   node_modules:
