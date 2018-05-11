@@ -46,7 +46,7 @@ Execute following commands:
 
 ```
 # Execute following command;
-$ rails new _your_app_name_ --force --skip-bundle -m https://raw.github.com/shibukk/rails5_application_template/master/template.rb
+$ rails new _your_app_name_ --force --skip-bundle -m https://raw.github.com/shibukk/rails5_simple_template/master/template.rb
 
 # After you create rails project, then there is no more need to use the directories.
 $ cd _your_app_name_
