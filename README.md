@@ -20,9 +20,6 @@ $ brew install gibo
 # Install automake for ffi instalation fails
 $ brew install automake
 
-# Install yarn for webpacker
-$ brew install yarn
-
 # Update ruby-build
 $ brew upgrade ruby-build
 
