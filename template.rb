@@ -22,4 +22,7 @@ get 'https://raw.github.com/shibukk/rails5_simple_template/master/bin/start_serv
 get 'https://raw.github.com/shibukk/rails5_simple_template/master/root/docker-compose.yml', 'docker-compose.yml'
 get 'https://raw.github.com/shibukk/rails5_simple_template/master/docker/.env', 'docker/.env'
 get 'https://raw.github.com/shibukk/rails5_simple_template/master/docker/web/Dockerfile', 'docker/web/Dockerfile'
+
+gsub_file 'docker/web/Dockerfile', /%RUBY_VERSION/, ruby_version
+
 run 'chmod 0755 bin/start_server'
