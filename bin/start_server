@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 # Install gems
-bundle install --jobs=4 --path=/bundle
+bundle install --jobs=4
 
 # Remove process file
 if [ -e /app/tmp/pids/*.pid ]; then rm /app/tmp/pids/*.pid; fi
