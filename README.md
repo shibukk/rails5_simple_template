@@ -1,4 +1,4 @@
-# Application Simple Template for Rails5
+# Application Simple Template for Rails
 
 Rails5 Simple Application Template. - [Rails Application Templates — Ruby on Rails Guides](http://guides.rubyonrails.org/rails_application_templates.html)
 
@@ -26,15 +26,15 @@ $ brew upgrade ruby-build
 # Show some ruby versions which rbenv can install
 $ rbenv install --list
 
-# Install latest Ruby(e.g. 2.5.0)
-$ rbenv install 2.5.0
+# Install latest Ruby(e.g. 2.7.2)
+$ rbenv install 2.7.2
 ```
 
 ### Install latest Rails gem
 
 ```
-# Set to use rails latest version(e.g. 5.1.5)
-$ gem install rails -v 5.1.5
+# Set to use rails latest version(e.g. 6.0.3.4)
+$ gem install rails -v 6.0.3.4
 ```
 
 ## Execution command
@@ -43,7 +43,7 @@ Execute following commands:
 
 ```
 # Execute following command;
-$ rails new _your_app_name_ --force --skip-bundle -m https://raw.github.com/shibukk/rails5_simple_template/master/template.rb
+$ rails new _your_app_name_ --force --skip-bundle -m https://raw.github.com/shibukk/rails_simple_template/master/template.rb
 
 # After you create rails project, then there is no more need to use the directories.
 $ cd _your_app_name_
