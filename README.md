@@ -1,6 +1,6 @@
 # Application Simple Template for Rails
 
-Rails5 Simple Application Template. - [Rails Application Templates — Ruby on Rails Guides](http://guides.rubyonrails.org/rails_application_templates.html)
+Rails Simple Application Template. - [Rails Application Templates — Ruby on Rails Guides](http://guides.rubyonrails.org/rails_application_templates.html)
 
 It's enhanced version of [morizyun/rails5_application_template](https://github.com/morizyun/rails5_application_template).
 
