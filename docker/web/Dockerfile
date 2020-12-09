@@ -1,4 +1,4 @@
-FROM node:9.3.0 as node
+FROM node:12.20.0 as node
 FROM ruby:%RUBY_VERSION
 
 RUN mkdir -p /app
