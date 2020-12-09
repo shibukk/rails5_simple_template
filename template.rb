@@ -12,7 +12,7 @@ ruby '#{ruby_version}'
 ), after: "source 'https://rubygems.org'"
 run "echo '#{ruby_version}' > ./.ruby-version"
 
-Bundler.with_clean_env do
+Bundler.with_unbundled_env do
   run 'bundle install --path vendor/bundle --jobs=4 --without production'
   run 'bundle binstubs bundler --force'
 end
